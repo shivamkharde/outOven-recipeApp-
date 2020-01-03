@@ -1,0 +1,24 @@
+
+.title-bar{
+    padding: 20px;
+    background: #007bff;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111111;
+    width: 100%;
+}
+.interface{
+    margin-top: 100px;
+}
+.recipe-result{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.search-bar{
+
+}
