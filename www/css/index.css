@@ -1,4 +1,13 @@
 
+.hidden{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #007bff00;
+    z-index: 0000000000;
+}
 .title-bar{
     padding: 20px;
     background: #007bff;
@@ -19,6 +28,62 @@
     align-items: center;
     color: gray;
 }
-.search-bar{
+.single-recipe-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.title-bar>h3>span{
+    margin-left: 20px;
+}
+.title-bar>h3{
+   margin: 0;
+}
+#recipename{
+    padding: 25px;
+    border-radius: 0;
+    margin-right: 10px;
+}
+#searchrecipe{
+    border-radius: 0;
+}
 
+/* menu css */
+
+.main-wrapper>.main-menu{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111111111111111;
+    background: #f5f5f5;
+    box-shadow: -1px 1px 10px 0px grey;
+    display: none;
+}
+.main-wrapper>.main-menu>.menu-upper-part{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(0deg, #007bff99, #007bff99),url(../img/side-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+.main-wrapper>.main-menu>.menu-upper-part>.user-circle{
+    width: 90px;
+    height: 90px;
+    background-image: url(../img/user-placeholder.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 100px;
+}
+.main-wrapper>.main-menu>.menu-upper-part>h3{
+    font-weight: bolder;
+    margin: 0;
 }

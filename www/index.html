@@ -14,11 +14,12 @@
 
 <body>
     <div class="app">
-        <div class="main-wrapper">
-            <div class="title-bar">
-                <h3>OutOven Recipes</h3>
+        <div class="hidden" id="hidden"></div>
+        <div class="main-wrapper" id="main-wrapper">
+            <div class="title-bar" id="title-bar">
+               <h3><img src="img/menu.png" id="menu-icon" width="32px" height="35px" alt="menu"> <span>OutOven Recipes</span></h3>
             </div>
-            <div class="container interface">
+            <div class="container interface" id="interface">
                 <div class="row search-bar">
                     <div class="col-md-12">
                         <div class="input-group mb-2 mr-sm-2">
@@ -31,6 +32,19 @@
                 <div class="row recipe-result" id="recipe-result">
                     search recipes...
                 </div>
+                <div class="row single-recipe-result" id="single-recipe-result">
+                    <!-- after clicking on one recipe -->
+                </div>
+            </div>
+
+            <!-- menu -->
+            <div class="main-menu" id="main-menu">
+                <div class="menu-upper-part">
+                    <div class="user-circle">
+
+                    </div>
+                    <h3>Username</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -42,7 +56,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 
